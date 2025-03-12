@@ -1,0 +1,85 @@
+# Identifying Hot Topic Trends in Streaming Text Data
+
+## Overview
+This project focuses on detecting hot topic trends in streaming text data using a sequential evolution model based on distributed representations. It leverages Natural Language Processing (NLP) and Machine Learning (ML) techniques to analyze and visualize emerging topics in real-time. The system processes large-scale streaming data from sources like social media, news platforms, and online forums.
+
+## Features
+- Real-time trend detection from streaming text data
+- Sentiment analysis to understand public opinion
+- Scalable processing using distributed frameworks
+- Visual representation of detected trends using graphs and dashboards
+- Implementation of various ML algorithms including Decision Trees, Naïve Bayes, and SVM
+
+## Technologies Used
+- **Programming Language**: Python
+- **Frameworks**: Django (for web-based interaction)
+- **Machine Learning**: Scikit-learn, Word2Vec
+- **Data Processing**: Pandas, NumPy, NLTK
+- **Storage**: MySQL (WAMP Server)
+- **Distributed Processing**: Apache Kafka, Apache Spark
+
+## Installation
+### Prerequisites
+Ensure you have the following installed:
+- Python 3.x
+- Django Framework
+- MySQL Database (or any preferred database management system)
+- Apache Kafka & Apache Spark (for distributed processing)
+
+### Setup Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/hot-topic-trends.git
+   cd hot-topic-trends
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Set up the database:
+   - Configure `settings.py` with database credentials
+   - Run migrations:
+     ```bash
+     python manage.py migrate
+     ```
+4. Start the Django server:
+   ```bash
+   python manage.py runserver
+   ```
+5. (Optional) Start Apache Kafka and Spark if using distributed processing.
+
+## Usage
+- **Admin Panel**: Log in as an admin to view user activity and system logs.
+- **User Dashboard**: Registered users can submit text data for trend detection.
+- **Trend Analysis**: Real-time visualization of emerging topics.
+
+## Methodology
+1. **Data Collection**: Streams text data from social media and news APIs.
+2. **Preprocessing**: Tokenization, stopword removal, stemming, and lemmatization.
+3. **Topic Modeling**: Implements LDA, Word2Vec, and Sequential Evolution Model.
+4. **Trend Detection**: Identifies emerging topics and their evolution over time.
+5. **Visualization**: Presents trends using dashboards and charts.
+
+## Results
+- Achieved **high accuracy** in detecting relevant trends.
+- Implemented a **scalable** architecture for handling large-scale streaming data.
+- Developed **interactive visualizations** for intuitive trend analysis.
+
+## Future Enhancements
+- Integration with more social media platforms.
+- Improved topic modeling using deep learning (e.g., BERT, GPT models).
+- Support for multilingual trend detection.
+- Advanced real-time sentiment analysis.
+
+## Contributors
+- D. Sujith
+- S. Sowjanya
+- R. Sairam
+- T. Poojitha Reddy
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+Special thanks to Malla Reddy College of Engineering and our faculty guide Mrs. Sravanthi K for their support and guidance.
+
