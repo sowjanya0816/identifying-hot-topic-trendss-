@@ -1,0 +1,73 @@
+## Project Requirements
+
+### 1. Hardware Requirements
+- **Processor**: Intel Core i3 or higher
+- **RAM**: Minimum 4GB (Recommended: 8GB+ for large-scale data processing)
+- **Storage**: At least 20GB free space
+- **Operating System**: Windows 7/10/11, Linux (Ubuntu recommended), or macOS
+
+### 2. Software Requirements
+- **Python**: Version 3.7 or higher
+- **Django Framework**: Latest stable version
+- **MySQL**: WAMP/XAMPP Server for database management
+- **Apache Kafka**: For real-time data streaming
+- **Apache Spark**: For distributed data processing
+
+### 3. Python Dependencies
+Install the required libraries using:
+```bash
+pip install -r requirements.txt
+```
+
+#### Required Python Packages:
+- `django` - Web framework for the project
+- `numpy` - Numerical computations
+- `pandas` - Data manipulation and analysis
+- `scikit-learn` - Machine learning algorithms
+- `nltk` - Natural Language Processing
+- `word2vec` - Word embedding for topic modeling
+- `matplotlib` & `seaborn` - Data visualization
+- `mysqlclient` - MySQL database connectivity
+- `spark` - For distributed processing
+
+### 4. Database Configuration
+- Configure MySQL database in Django’s `settings.py` file:
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'hot_topic_trends',
+        'USER': 'root',
+        'PASSWORD': 'yourpassword',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+```
+
+### 5. Optional Tools
+- **Postman**: For API testing
+- **Power BI/Tableau**: For advanced data visualization
+
+### 6. Running the Project
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/hot-topic-trends.git
+   cd hot-topic-trends
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Apply database migrations:
+   ```bash
+   python manage.py migrate
+   ```
+4. Run the Django server:
+   ```bash
+   python manage.py runserver
+   ```
+5. Start Kafka and Spark for real-time processing (if needed).
+
+This ensures a fully functional environment for detecting hot topic trends in streaming text data. 🚀
+
